@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="model.js"></script>
+    <script src="mainView.js"></script>
+    <script src="mainControler.js"></script>
+    <script src="studentView.js"></script>
+    <script src="studendControler.js"></script>
+    <script src="teacherControler.js"></script>
+    <script src="teacherView.js"></script>
+    <script src="pointsView.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        updateView();
+
+function updateView(){
+    if(model.app.currentPage == 'Main') updateViewMain();
+    if(model.app.currentPage == 'teacher') updateViewTeacher();
+    if(model.app.currentPage == 'student') updateViewStudent();
+//     if(model.app.currentPage == 'result') updateViewStudentResult();
+ }
+    </script>
+    
+</body>
+</html>
